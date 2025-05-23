@@ -41,13 +41,14 @@
 }
 
 .header-logo-icon {
+  padding-right: 24px;
   margin-left: -7px;
 }
 
 .border-right {
-  border-right: solid 1px var(--bs-grey);
+  border-right: solid 1px var(--bs-gray);
 }
 
-.gap-30 {
-  gap: 30px;
+.gap-24 {
+  gap: 24px;
 }

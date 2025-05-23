@@ -28896,6 +28896,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: var(--bs-gray);
 }
 
 .row {
@@ -28905,6 +28906,10 @@ body {
 
 .general-padding {
   padding: 24px;
+}
+
+.container-xxl {
+  background-color: white;
 }
 
 .header a {
@@ -28950,15 +28955,16 @@ body {
 }
 
 .header-logo-icon {
+  padding-right: 24px;
   margin-left: -7px;
 }
 
 .border-right {
-  border-right: solid 1px var(--bs-grey);
+  border-right: solid 1px var(--bs-gray);
 }
 
-.gap-30 {
-  gap: 30px;
+.gap-24 {
+  gap: 24px;
 }
 
 .contacts {

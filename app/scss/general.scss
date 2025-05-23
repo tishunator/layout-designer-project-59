@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: var(--bs-gray);
 }
 .row {
   --bs-gutter-x: 0; /* увеличиваем горизонтальные отступы */
@@ -9,4 +10,7 @@ body {
 }
 .general-padding{
   padding: 24px;
+}
+.container-xxl{
+  background-color: white;
 }
