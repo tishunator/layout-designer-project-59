@@ -1,9 +1,3 @@
-header {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .header a {
   color: var(--bs-light);
   text-decoration: none;
@@ -52,4 +46,8 @@ header {
 
 .border-right {
   border-right: solid 1px var(--bs-grey);
+}
+
+.gap-30 {
+  gap: 30px;
 }

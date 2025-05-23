@@ -28892,10 +28892,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header {
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+.row {
+  --bs-gutter-x: 0; /* увеличиваем горизонтальные отступы */
+  --bs-gutter-y: 0; /* добавляем вертикальные отступы */
+}
+
+.general-padding {
+  padding: 24px;
 }
 
 .header a {
@@ -28946,6 +28955,10 @@ header {
 
 .border-right {
   border-right: solid 1px var(--bs-grey);
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 .contacts {

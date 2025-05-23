@@ -36,6 +36,7 @@ $container-max-widths: map-merge(
 @import 'var';
 @import 'utilities';
 @import 'functions';
+@import 'general';
 @import 'components/header';
 @import 'components/contact';
 @import 'components/messages';

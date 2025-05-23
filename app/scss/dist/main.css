@@ -32140,6 +32140,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 header {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
