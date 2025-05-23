@@ -32322,8 +32322,18 @@ a.chat {
   margin-bottom: -18px;
 }
 
-.pt-32 {
-  padding-top: 32px;
+.card-body {
+  margin-top: 32px;
+  margin-left: 12px;
+}
+
+.card-text {
+  padding-top: 10px;
+}
+
+.list-group-item {
+  padding-top: 85px;
+  margin-left: 12px;
 }
 
 @font-face {
@@ -32339,5 +32349,5 @@ a.chat {
 @font-face {
   font-weight: 300;
   font-family: Roboto;
-  src: url("../fonts/Roboto-Light.ttf");
+  src: url("../ fonts/Roboto-Light.ttf");
 }

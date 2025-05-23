@@ -48,6 +48,10 @@ function svgSprites() {
     .pipe(dest(paths.svg.dest));
 }
 
+function fonts() {
+  return src('app/fonts/**/*.{woff,woff2,ttf}')
+    .pipe(dest('build/fonts'));
+}
 // Объединение CSS (например, если хочешь собрать все стили в один файл)
 function concatCss() {
   return src(['node_modules/bootstrap/dist/css/bootstrap.min.css', 'build/css/*.css'])
@@ -60,10 +64,12 @@ function watcher() {
   watch(paths.pug.src, compilePug);
   watch(paths.styles.src, compileSass);
   watch(paths.svg.src, svgSprites);
+  
 }
 
 exports.default = series(
-  parallel(compilePug, compileSass, svgSprites),
+  parallel(compilePug, compileSass, svgSprites, fonts),
   concatCss,
-  watcher
+  watcher,
+  
 );
