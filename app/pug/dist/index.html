@@ -2,22 +2,23 @@
 <html>
   <head>
     <title>Мой чат</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body class="h-100 overflow-hidden"> 
-    <div class="container-xxl row">
+  <body class="overflow-hidden general-padding"> 
+    <div class="container-xxl row radius">
       <div class="col-md-4 border-right"> 
         <header class="header d-flex border-bottom bg-primary radius-left-top w-100">
-          <div class="container-fluid d-flex flex-nowrap justify-content-between align-items-center">
-            <div class="header-logo d-flex text-decoration-none">
+          <div class="container-fluid d-flex flex-nowrap justify-content-around align-items-center">
+            <div class="header-logo text-decoration-none">
               <svg class="header-logo-icon">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </div>
-            <div class="header-controls d-flex flex-nowrap gap-4 ul nav nav-tabs flex-nowrap" role="tablist">
+            <div class="header-controls d-flex flex-nowrap gap-24 ul nav nav-tabs flex-nowrap" role="tablist">
               <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#contacts" data-bs-toggle="tab" role="tab" aria-selected="true">
                   <svg width="25" height="25">
                     <use xlink:href="img/sprite.svg#people"></use>
@@ -158,7 +159,7 @@
         </div>
       </div>
       <div class="col-md-8"> 
-        <div class="welcome-message d-flex flex-column justify-content-center align-items-center h-100"><img class="mb-4 rounded-circle" src="images/avatar_1.jpg" width="200" height="200" alt="Аватар Кодовёнка">
+        <div class="welcome-message d-flex flex-column justify-content-center align-items-center h-100 radius"><img class="mb-4 rounded-circle" src="images/avatar_1.jpg" width="200" height="200" alt="Аватар Кодовёнка">
           <div class="welcome-text text-center">
             <h5>Привет, Кодовёнок
               <p class="text-black-50 small">Выбери чат, чтобы начать общаться</p>
