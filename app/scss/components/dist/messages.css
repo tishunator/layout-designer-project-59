@@ -1,0 +1,40 @@
+.chat {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border: none;
+}
+
+a.chat {
+  text-decoration: none;
+  color: #212529;
+}
+
+.chat:hover {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
+.chat-lastMessage {
+  color: var(-bs--secondary);
+}
+
+.chat-lastMessage:hover {
+  color: var(--bs-light);
+}
+
+.messages {
+  height: 100vh;
+}
+
+.chat-info {
+  padding-left: 24px;
+  padding-top: 36px;
+}
+
+.last-message {
+  font-size: 80%;
+}
+
+.mBneg-18 {
+  margin-bottom: -18px;
+}

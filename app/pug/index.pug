@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  .container-xxl.row
+    .col-md-4.border-right 
+      include components/header.pug
+
+      .tab-content
+        .tab-pane.fade.show.active#contacts(role="tabpanel")
+          include components/contact.pug
+
+        .tab-pane.fade#chats(role="tabpanel")
+          include components/message.pug
+
+        .tab-pane.fade#profile(role="tabpanel")
+          include components/profile.pug
+    .col-md-8 
+      include chat.pug      

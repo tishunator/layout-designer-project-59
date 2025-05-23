@@ -1,0 +1,106 @@
+$custom-border-color: #efefef;
+$custom-radius: 1rem;
+
+// === Border Utilities ===
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$utilities: map-merge(
+  $utilities,
+  (
+
+    // Границы
+    "border": map-merge(
+      map-get($utilities, "border"),
+      (
+        responsive: true,
+        values: (
+          null: 1px solid $custom-border-color
+        )
+      )
+    ),
+
+    "border-top": (
+      property: border-top,
+      class: border-top,
+      values: (
+        null: 1px solid $custom-border-color
+      ),
+      responsive: true
+    ),
+
+    "border-bottom": (
+      property: border-bottom,
+      class: border-bottom,
+      values: (
+        null: 1px solid $custom-border-color
+      ),
+      responsive: true
+    ),
+
+    "border-left": (
+      property: border-left,
+      class: border-left,
+      values: (
+        null: 1px solid $custom-border-color
+      ),
+      responsive: true
+    ),
+
+    "border-right": (
+      property: border-right,
+      class: border-right,
+      values: (
+        null: 1px solid $custom-border-color
+      ),
+      responsive: true
+    ),
+
+    // Радиусы
+    "radius": (
+      property: border-radius,
+      class: radius,
+      values: (
+        null: $custom-radius
+      ),
+      responsive: true
+    ),
+
+    "radius-left-top": (
+      property: border-top-left-radius,
+      class: radius-left-top,
+      values: (
+        null: $custom-radius
+      ),
+      responsive: true
+    ),
+
+    "radius-left-bottom": (
+      property: border-bottom-left-radius,
+      class: radius-left-bottom,
+      values: (
+        null: $custom-radius
+      ),
+      responsive: true
+    ),
+
+    "radius-right-top": (
+      property: border-top-right-radius,
+      class: radius-right-top,
+      values: (
+        null: $custom-radius
+      ),
+      responsive: true
+    ),
+
+    "radius-right-bottom": (
+      property: border-bottom-right-radius,
+      class: radius-right-bottom,
+      values: (
+        null: $custom-radius
+      ),
+      responsive: true
+    )
+  )
+);
+
+// === Подключаем API Bootstrap Utilities ===
+@import "../../node_modules/bootstrap/scss/utilities/api";

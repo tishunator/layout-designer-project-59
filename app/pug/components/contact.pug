@@ -1,0 +1,26 @@
+include contacts-data.pug
+.contacts.pt-5.px-4
+  h2 Контакты
+  form.search-form.mb-4
+    input.form-search(
+      type="search",
+      placeholder="Поиск по контактам",
+      aria-label="Поиск по контактам"
+    )
+  
+  //- Список контактов внутри .contacts
+  each items, letter in contacts
+    //- Заголовок алфавита
+    h6.text-muted= letter
+    
+    each contact in items
+      //- Карточка контакта
+      a.contact.shadow-sm.d-block.mB-34(href="#")
+        .d-flex.align-items-center
+          img.avatar.rounded-circle(
+            src=contact.avatar,
+            alt=contact.name
+          )
+          .text
+            h5.mb-0= contact.name
+            small.contact-status.fs-6= contact.status
