@@ -1,7 +1,7 @@
 include contacts-data.pug
 .contacts.pt-5.px-4
   h2 Контакты
-  form.search-form.mb-4
+  form.search-form
     input.form-search(
       type="search",
       placeholder="Поиск по контактам",
@@ -11,7 +11,7 @@ include contacts-data.pug
   //- Список контактов внутри .contacts
   each items, letter in contacts
     //- Заголовок алфавита
-    h6.text-muted= letter
+    h6.text-muted.pt-5= letter
     
     each contact in items
       //- Карточка контакта
