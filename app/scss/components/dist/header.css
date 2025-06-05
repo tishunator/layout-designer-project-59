@@ -42,7 +42,7 @@
 
 .header-logo-icon {
   position: relative;
-  left: -16px;
+  left: -22px;
 }
 
 .border-right {
@@ -50,9 +50,9 @@
 }
 
 .gap-24 {
-  gap: 24px;
+  gap: 29px;
 }
 
 .header-controls {
-  padding-left: 30px;
+  padding-left: 8px;
 }
