@@ -1,10 +1,10 @@
-header.header.d-flex.border-bottom.bg-primary.radius-left-top.w-100
-  .container-fluid.d-flex.flex-nowrap.justify-content-around.align-items-center
+header.header.d-flex.bg-primary.radius-left-top.w-100
+  .container-fluid.d-flex.flex-nowrap.justify-content-center.align-items-center
     .header-logo.text-decoration-none
       svg.header-logo-icon
         use(xlink:href="img/sprite.svg#logo")
 
-    .header-controls.d-flex.flex-nowrap.gap-24.ul.nav.nav-tabs.flex-nowrap(role="tablist")
+    nav.header-controls.d-flex.flex-nowrap.gap-24.ul.nav.nav-tabs.flex-nowrap(role="tablist")
       li.nav-item
         a.nav-link.d-flex.align-items-center(href="#contacts", data-bs-toggle="tab", role="tab", aria-selected="true")
           svg(width="25" height="25")
