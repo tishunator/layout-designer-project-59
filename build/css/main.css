@@ -28979,7 +28979,17 @@ body {
 
 @media (max-width: 767.98px) {
   .header-logo-icon {
-    left: -275px;
+    left: -155px;
+  }
+  .radius-left-top {
+    border-radius: 0 !important;
+  }
+  .header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 }
 .contacts {
