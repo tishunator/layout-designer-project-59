@@ -11,14 +11,8 @@ block content
 
         .tab-pane.fade#chats(role="tabpanel")
           include components/message.pug
-          include components/chat.pug
 
         .tab-pane.fade#profile(role="tabpanel")
           include components/profile.pug
-
-    .col-md-8
-      .tab-content
-        .tab-pane.fade.show.active#contacts(role="tabpanel")
-          include components/sidebar.pug
-        .tab-pane.fade#chats(role="tabpanel")
-          include components/chat.pug
+    .col-md-8 
+      include components/sidebar.pug      
