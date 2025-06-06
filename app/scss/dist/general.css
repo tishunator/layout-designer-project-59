@@ -21,3 +21,9 @@ body {
 .container-xxl {
   background-color: white;
 }
+
+@media (max-width: 767.98px) {
+  .general-padding {
+    padding: 0;
+  }
+}

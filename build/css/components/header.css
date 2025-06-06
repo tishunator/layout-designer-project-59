@@ -56,3 +56,9 @@
 .header-controls {
   padding-left: 8px;
 }
+
+@media (max-width: 767.98px) {
+  .header-logo-icon {
+    left: -275px;
+  }
+}
