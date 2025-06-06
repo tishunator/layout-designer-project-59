@@ -11,7 +11,13 @@ include chats-data.pug
 
   //- Список чатов
   each chat in chats
-    a.chat.d-block.shadow-sm.mBneg-18(href=`#chat-${chat.id}`)
+    a.chat.d-block.shadow-sm.mBneg-18(
+      href="#current-chat",
+      data-bs-toggle="collapse",
+      data-bs-target="#current-chat",
+      aria-expanded="false",
+      aria-controls="current-chat"
+)
       .d-flex.align-items-center
         img.avatar.rounded-circle(
           src=chat.avatar,
