@@ -2,33 +2,23 @@ extends layout.pug
 
 block content
   .container-xxl.row.radius
-    .col-4
-       include components/header.pug
-    .col-8
-      // можно оставить пустое пространство или что-то добавить
+    .col-md-4.border-right 
+      include components/header.pug
 
-    .col-12.mt-3
       .tab-content
-        // Контакты
         .tab-pane.fade.show.active#contacts(role="tabpanel")
-          .row
-            .col-md-4
-              include components/contact.pug
-            .col-md-8
-              include components/sidebar.pug
+          include components/contact.pug
 
-        // Сообщения
         .tab-pane.fade#chats(role="tabpanel")
-          .row
-            .col-md-4
-              include components/message.pug
-            .col-md-8
-              include components/chat.pug
+          include components/message.pug
+          include components/chat.pug
 
-        // Профиль
         .tab-pane.fade#profile(role="tabpanel")
-          .row
-            .col-md-4
-              include components/profile.pug
-            .col-md-8
-              // сюда, если нужно, дополнительный контент
+          include components/profile.pug
+
+    .col-md-8
+      .tab-content
+        .tab-pane.fade.show.active#contacts(role="tabpanel")
+          include components/sidebar.pug
+        .tab-pane.fade#chats(role="tabpanel")
+          include components/chat.pug
