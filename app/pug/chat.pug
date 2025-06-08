@@ -28,44 +28,66 @@ block content
 
       .tab-pane.fade.show.active#chats(role="tabpanel")
         include components/message.pug
-        
+
     .col-md-8 
       #current-chat.chat-dialog
         // Шапка
         .chat-header
-          .chat-user
-            .chat-user-name Вениамин Редакторович
-            .chat-user-status Онлайн
+          .chat-user.d-flex.align-items-center
+            img.avatar.rounded-circle(src="images/avatar_4.jpg", alt="Аватар")
+            .chat-user-info.ms-3
+              h5.chat-user-name.mb-0 Вениамин Редакторович
+              small.contact-status.chat-user-status Онлайн
 
         // Область сообщений
         .chat-messages
+          // Входящее
           .message.message-in
-            .message-content
-              p Да, я уже вышел и минут через 20–30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
-            .message-time 8 минут назад
+            img.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content
+                h5.chat-user-name Вениамин Редакторович
+                p Да, я уже вышел и минут через 20–30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+                .message-time 8 минут назад
 
+          // Исходящее
           .message.message-out
-            .message-content
-              p Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
-            .message-time 5 минут назад
+            img.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            .message-body
+              .message-content
+                p Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+                .message-time 5 минут назад
 
+          // Входящее
           .message.message-in
-            .message-content
-              p Лады
-            .message-time 5 минут назад
+            img.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content
+                h5.chat-user-name Вениамин Редакторович
+                p Лады
+                .message-time 5 минут назад
 
+          // Исходящее
           .message.message-out
-            .message-content
-              p А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
-            .message-time 3 минуты назад
+            img.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            .message-body
+              .message-content
+                p А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+                .message-time 3 минуты назад
 
+          // Входящее
           .message.message-in
-            .message-content
-              p o_O
-            .message-time Только что
+            img.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content
+                h5.chat-user-name Вениамин Редакторович
+                p o_O
+                .message-time Только что
 
-        // Форма ввода
-        form.chat-form
-          input.chat-input(type="text", placeholder="Напишите сообщение…")
-          button.chat-send(type="submit")
-            img(src="icons/send.svg", alt="Отправить")
+       
+          form.chat-form.d-flex
+            input.form-search(type="text", placeholder="Напишите сообщение…")
+            button.chat-send(type="submit")
+              i.bi.bi-send
+
+

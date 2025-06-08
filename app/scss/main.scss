@@ -41,6 +41,7 @@ $container-max-widths: map-merge(
 @import 'components/contact';
 @import 'components/messages';
 @import 'components/profile';
+@import 'components/chat';
 
 @font-face {
   font-weight: 400;
