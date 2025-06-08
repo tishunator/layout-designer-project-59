@@ -29138,6 +29138,7 @@ a.chat {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-size: 16px;
 }
 
 .chat-header {

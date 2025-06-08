@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh; // или 100% если обёртка ограничена по высоте
+  font-size: 16px;
 }
 .chat-header {
   position: sticky;
