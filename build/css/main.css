@@ -29189,7 +29189,7 @@ a.chat {
 .message .message-body {
   display: flex;
   flex-direction: column;
-  max-width: 75%;
+  max-width: 71%;
 }
 .message .message-content {
   padding: 1.5rem;
@@ -29203,8 +29203,9 @@ a.chat {
 .message .message-time {
   font-size: 0.875rem;
   color: var(--bs-secondary);
-  margin-top: 0.5rem;
-  border-top: 1px solid var(--bs-secondary);
+  margin-top: -5px;
+  padding-top: 3px;
+  border-top: 1px solid var(--bs-gray);
 }
 
 .message-in {
