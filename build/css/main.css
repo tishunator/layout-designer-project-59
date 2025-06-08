@@ -29177,6 +29177,12 @@ a.chat {
   top: -6px;
 }
 
+.chat-form {
+  position: sticky;
+  bottom: 0;
+  padding: 32px 24px;
+}
+
 .message {
   display: flex;
   align-items: flex-start;

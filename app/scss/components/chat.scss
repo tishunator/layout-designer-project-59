@@ -41,6 +41,11 @@
   position: relative;
     top: -6px;
 }
+.chat-form{
+  position: sticky;
+  bottom: 0;
+      padding: 32px 24px;
+}
 
 // Общие стили для сообщения
 .message {
