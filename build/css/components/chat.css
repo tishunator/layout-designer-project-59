@@ -44,6 +44,11 @@
   top: -6px;
 }
 
+.chat-user-info {
+  padding-left: 2px;
+  padding-top: 4px;
+}
+
 .chat-form {
   position: sticky;
   bottom: 0;
