@@ -29186,7 +29186,7 @@ a.chat {
 }
 
 .chat-form .form-search {
-  padding: 24px 32px;
+  padding: 32px 24px;
   border-bottom: none;
   border-top: solid 1px var(--bs-gray);
   padding-bottom: 40px;
