@@ -84,7 +84,7 @@
 }
 .message .message-time {
   font-size: 0.875rem;
-  color: var(--bs-secondary);
+  color: #6C757D99;
   margin-top: -5px;
   padding-top: 3px;
   border-top: 1px solid var(--bs-gray);
@@ -112,4 +112,8 @@ h5 {
 .message-out .message-content {
   background-color: var(--bs-primary);
   color: var(--bs-light);
+}
+.message-out .message-time {
+  border-top: 1px solid #efefef99;
+  color: #FFFFFF99;
 }

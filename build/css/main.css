@@ -29218,7 +29218,7 @@ a.chat {
 }
 .message .message-time {
   font-size: 0.875rem;
-  color: var(--bs-secondary);
+  color: rgba(108, 117, 125, 0.6);
   margin-top: -5px;
   padding-top: 3px;
   border-top: 1px solid var(--bs-gray);
@@ -29246,6 +29246,10 @@ h5, .h5 {
 .message-out .message-content {
   background-color: var(--bs-primary);
   color: var(--bs-light);
+}
+.message-out .message-time {
+  border-top: 1px solid rgba(239, 239, 239, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @font-face {
