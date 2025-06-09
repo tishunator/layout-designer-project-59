@@ -27,7 +27,7 @@ include chats-data.pug
         .chat-info.flex-grow-1
           .d-flex.justify-content-between
             h5.mb-0= chat.name
-            small.text-muted= chat.time
+            small.text-muted.pR-40= chat.time
           .d-flex.justify-content-between.align-items-end
             p.mb-0.text-truncate.last-message(style="max-width: 70%")= chat.lastMessage
 

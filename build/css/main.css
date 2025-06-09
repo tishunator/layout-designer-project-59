@@ -29120,6 +29120,10 @@ a.chat {
   margin-bottom: -18px;
 }
 
+.pR-40 {
+  padding-right: 40px;
+}
+
 .card-body {
   margin-top: 32px;
   margin-left: 12px;
@@ -29147,6 +29151,7 @@ a.chat {
   background-color: white;
   z-index: 10;
   padding-top: 12px;
+  border-bottom: solid 1px var(--bs-gray);
 }
 
 .chat-messages {

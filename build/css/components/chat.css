@@ -12,6 +12,7 @@
   background-color: white;
   z-index: 10;
   padding-top: 12px;
+  border-bottom: solid 1px var(--bs-gray);
 }
 
 .chat-messages {
