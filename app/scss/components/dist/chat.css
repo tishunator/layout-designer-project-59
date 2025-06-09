@@ -70,7 +70,8 @@
 .message .message-body {
   display: flex;
   flex-direction: column;
-  max-width: 71%;
+  max-width: 574px;
+  min-width: 237px;
 }
 .message .message-content {
   padding: 1.5rem;
