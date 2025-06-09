@@ -29166,6 +29166,7 @@ a.chat {
   background-color: var(--bs-primary);
   color: white;
   font-size: 20.6px; /* размер иконки */
+  align-self: center;
 }
 
 .chat-user {
@@ -29180,7 +29181,13 @@ a.chat {
 .chat-form {
   position: sticky;
   bottom: 0;
-  padding: 32px 24px;
+}
+
+.chat-form .form-search {
+  padding: 24px 32px;
+  border-bottom: none;
+  border-top: solid 1px var(--bs-gray);
+  padding-bottom: 50px;
 }
 
 .message {
