@@ -84,8 +84,7 @@
 .message .message-time {
   font-size: 0.875rem;
   color: rgba(108, 117, 125, 0.6);
-  margin-top: -5px;
-  border-top: 1px solid rgba(239, 239, 239, 0.6);
+  margin-top: -12px;
 }
 
 .message-in {
@@ -112,6 +111,13 @@ h5 {
   color: var(--bs-light);
 }
 .message-out .message-time {
-  border-top: 1px solid rgba(239, 239, 239, 0.6);
   color: rgba(255, 255, 255, 0.6);
+}
+
+.chat-dialog p {
+  margin-bottom: 10px !important;
+}
+
+hr {
+  margin-top: 8px !important;
 }
