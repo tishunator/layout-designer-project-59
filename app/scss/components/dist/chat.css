@@ -70,7 +70,7 @@
 .message .message-body {
   display: flex;
   flex-direction: column;
-  max-width: 574px;
+  max-width: 563px;
   min-width: 237px;
 }
 .message .message-content {
