@@ -1,0 +1,27 @@
+header.header.d-flex.bg-primary.radius-left-top.w-100
+  .container-fluid.d-flex.flex-nowrap.justify-content-end.justify-content-md-center.align-items-center
+    .header-logo.text-decoration-none
+      svg.header-logo-icon
+        use(xlink:href="img/sprite.svg#logo")
+
+    nav.header-controls.d-flex.flex-nowrap.gap-24.ul.nav.nav-tabs.flex-nowrap(role="tablist")
+      li.nav-item
+        a.nav-link.d-flex.align-items-center.d-md-none(href="#current-chat", data-bs-toggle="tab", role="tab", aria-selected="false")
+          svg(width="25" height="25")
+            use(xlink:href="img/sprite.svg#chat-left-text")    
+      li.nav-item
+        a.nav-link.d-flex.align-items-center(href="#contacts", data-bs-toggle="tab", role="tab", aria-selected="true")
+          svg(width="25" height="25")
+            use(xlink:href="img/sprite.svg#people")
+          span.d-none.d-sm-inline Контакты
+      li.nav-item
+        a.nav-link.d-flex.align-items-center(href="#chats", data-bs-toggle="tab", role="tab", aria-selected="false")
+          svg(width="25" height="25")
+            use(xlink:href="img/sprite.svg#chat")
+          span.d-none.d-sm-inline Сообщения
+
+      li.nav-item
+        a.nav-link.d-flex.align-items-center(href="#profile", data-bs-toggle="tab", role="tab", aria-selected="false")
+          svg(width="25" height="25")
+            use(xlink:href="img/sprite.svg#person")
+          span.d-none.d-sm-inline Профиль
