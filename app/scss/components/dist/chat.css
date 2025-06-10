@@ -50,18 +50,22 @@
   padding-top: 4px;
 }
 
+form {
+  z-index: 1030;
+  width: 92%;
+  background-color: #FBFBFB;
+}
+
 .chat-form {
-  position: sticky;
-  bottom: 0;
-  padding-bottom: 18px;
+  position: fixed;
+  bottom: 72px;
   margin-left: -15px;
 }
 
 .chat-form .form-search {
-  padding: 32px 24px;
+  padding: 20px 32px;
   border-bottom: none;
   border-top: solid 1px var(--bs-gray);
-  padding-bottom: 62px;
 }
 
 .message {
@@ -141,12 +145,7 @@ hr {
     padding-top: 60px;
   }
 
-  .chat-form {
-    padding-bottom: 0;
-  }
-
   .chat-form .form-search {
-    padding-bottom: 24px;
     margin-top: 0;
   }
 
