@@ -136,6 +136,9 @@ h5 {
 hr{
   margin-top: 8px !important;
 }
+form.chat-form{
+  background-color: #fbfbfb;
+}
 
 @media (max-width: 767.98px) {
   .message .message-content {
@@ -160,6 +163,9 @@ margin-bottom: 54px;
 .chat-send {
   align-self: flex-start;
   transform: translateY(50%);
+  width: 42px;
+  height: 42px;
+  margin-right: -35px;
 
 }
 }
