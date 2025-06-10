@@ -1,5 +1,5 @@
 #current-chat.chat-dialog
-  // Шапка чата
+
   .chat-header
     .chat-user.d-flex.align-items-center
       img.avatar.rounded-circle(src="images/avatar_4.jpg", alt="Аватар")
@@ -9,7 +9,7 @@
 
   // Область сообщений
   .chat-messages
-    // Входящее сообщение
+    // Входящее
     .message.message-in
       img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
       .message-body
@@ -19,7 +19,7 @@
           hr
           .message-time 8 минут назад
 
-    // Исходящее сообщение
+    // Исходящее
     .message.message-out
       img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
       .message-body
@@ -28,7 +28,7 @@
           hr
           .message-time 5 минут назад
 
-    // Входящее сообщение
+    // Входящее
     .message.message-in
       img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
       .message-body
@@ -38,7 +38,7 @@
           hr
           .message-time 5 минут назад
 
-    // Исходящее сообщение
+    // Исходящее
     .message.message-out
       img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
       .message-body
@@ -47,7 +47,7 @@
           hr
           .message-time 3 минуты назад
 
-    // Входящее сообщение
+    // Входящее
     .message.message-in
       img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
       .message-body
@@ -57,8 +57,8 @@
           hr
           .message-time Только что
 
-  // Форма отправки сообщения
-  form.chat-form.d-flex
-    input.form-search(type="text", placeholder="Напишите сообщение…")
-    button.chat-send(type="submit")
-      i.bi.bi-send
+    // Форма отправки
+    form.chat-form.d-flex
+      input.form-search(type="text", placeholder="Напишите сообщение…")
+      button.chat-send(type="submit")
+        i.bi.bi-send

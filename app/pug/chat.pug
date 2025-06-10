@@ -18,4 +18,67 @@ block content
         .tab-pane.fade#profile(role="tabpanel")
           include components/profile.pug
     .col-md-8 
-      include components/chat.pug
+      #current-chat.chat-dialog
+
+        .chat-header
+          .chat-user.d-flex.align-items-center
+            img.avatar.rounded-circle(src="images/avatar_4.jpg", alt="Аватар")
+            .chat-user-info.ms-3
+              h5.chat-user-name.mb-0 Вениамин Редакторович
+              small.contact-status.chat-user-status Онлайн
+
+        // Область сообщений
+        .chat-messages
+          // Входящее
+          .message.message-in
+            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content.shadow-sm
+                h5.chat-user-name Вениамин Редакторович
+                p Да, я уже вышел и минут через 20–30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+                hr
+                .message-time 8 минут назад
+
+          // Исходящее
+          .message.message-out
+            img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            .message-body
+              .message-content.shadow-sm
+                p Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+                hr
+                .message-time 5 минут назад
+
+          // Входящее
+          .message.message-in
+            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content.shadow-sm
+                h5.chat-user-name Вениамин Редакторович
+                p Лады
+                hr
+                .message-time 5 минут назад
+
+          // Исходящее
+          .message.message-out
+            img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            .message-body
+              .message-content.shadow-sm
+                p А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+                hr
+                .message-time 3 минуты назад
+
+          // Входящее
+          .message.message-in
+            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            .message-body
+              .message-content.shadow-sm
+                h5.chat-user-name Вениамин Редакторович
+                p o_O
+                hr
+                .message-time Только что
+
+          // Форма отправки
+          form.chat-form.d-flex
+            input.form-search(type="text", placeholder="Напишите сообщение…")
+            button.chat-send(type="submit")
+              i.bi.bi-send
