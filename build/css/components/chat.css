@@ -128,6 +128,10 @@ hr {
   margin-top: 8px !important;
 }
 
+form {
+  background-color: #fbfbfb;
+}
+
 @media (max-width: 767.98px) {
   .message .message-content {
     padding-left: 23px;
@@ -138,14 +142,16 @@ hr {
   .chat-messages {
     padding-top: 60px;
   }
-  .chat-form {
-    padding-bottom: 0;
-  }
   .chat-form .form-search {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
+    margin-bottom: 54px;
     margin-top: 0;
   }
   .chat-header {
     padding-top: 0;
+  }
+  .chat-send {
+    align-self: flex-start;
+    transform: translateY(50%);
   }
 }
