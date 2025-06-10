@@ -129,10 +129,6 @@ hr {
   margin-top: 8px !important;
 }
 
-form {
-  background-color: #fbfbfb;
-}
-
 @media (max-width: 767.98px) {
   .message .message-content {
     padding-left: 23px;
