@@ -140,4 +140,17 @@ hr {
   .chat-messages {
     padding-top: 60px;
   }
+
+  .chat-form {
+    padding-bottom: 0;
+  }
+
+  .chat-form .form-search {
+    padding-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .chat-header {
+    padding-top: 0;
+  }
 }
