@@ -6,6 +6,7 @@ block content
       include components/chat-header.pug
 
       .tab-content
+        .tab-pane.fade#current-chat(role="tabpanel")  
         .tab-pane.fade#contacts(role="tabpanel")
           include components/contact.pug
 
@@ -15,7 +16,7 @@ block content
         .tab-pane.fade#profile(role="tabpanel")
           include components/profile.pug
 
-        .tab-pane.fade.show.active#current-chat(role="tabpanel")  
+        
  
 
 

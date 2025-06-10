@@ -23,11 +23,11 @@
                   <svg width="25" height="25">
                     <use xlink:href="img/sprite.svg#chat-left-text">   </use>
                   </svg></a></li>
-              <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#contacts" data-bs-toggle="tab" role="tab" aria-selected="true">
+              <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#contacts" data-bs-toggle="tab" role="tab" aria-selected="false">
                   <svg width="25" height="25">
                     <use xlink:href="img/sprite.svg#people"></use>
                   </svg><span class="d-none d-sm-inline">Контакты</span></a></li>
-              <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#chats" data-bs-toggle="tab" role="tab" aria-selected="false">
+              <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#chats" data-bs-toggle="tab" role="tab" aria-selected="true">
                   <svg width="25" height="25">
                     <use xlink:href="img/sprite.svg#chat"></use>
                   </svg><span class="d-none d-sm-inline">Сообщения</span></a></li>
@@ -39,6 +39,7 @@
           </div>
         </header>
         <div class="tab-content">
+          <div class="tab-pane fade" id="current-chat" role="tabpanel"> </div>
           <div class="tab-pane fade" id="contacts" role="tabpanel">
             <div class="contacts pt-5 px-4">
               <h2>Контакты</h2>
@@ -160,7 +161,6 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show active" id="current-chat" role="tabpanel"> </div>
         </div>
       </div>
       <div class="col-md-8"> 
