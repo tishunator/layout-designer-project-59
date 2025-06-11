@@ -136,7 +136,7 @@ hr {
   .message .message-content {
     padding-left: 23px;
     padding-right: 12px;
-    padding-top: 25px;
+    padding-top: 23px;
     margin-left: 15px;
   }
   .chat-messages {
@@ -150,7 +150,7 @@ hr {
   }
   .chat-header {
     padding-top: 13px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
   .chat-send {
     align-self: flex-start;
