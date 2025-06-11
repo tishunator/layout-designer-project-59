@@ -149,6 +149,7 @@ form.chat-form {
     padding-bottom: 22px;
     margin-bottom: 54px;
     margin-top: 0;
+    background-color: #fbfbfb;
   }
 
   .chat-header {
@@ -160,6 +161,13 @@ form.chat-form {
     transform: translateY(50%);
     width: 42px;
     height: 42px;
-    margin-right: -35px;
+  }
+
+  .header-logo-icon {
+    left: -100px;
+  }
+
+  .container-fluid {
+    margin-left: -30px;
   }
 }
