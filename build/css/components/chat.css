@@ -130,7 +130,7 @@ hr {
 
 @media (max-width: 767.98px) {
   form.chat-form {
-    background-color: #fbfbfb;
+    background-color: #FFFFFF;
     margin-left: 9px;
   }
   .message .message-content {
@@ -146,10 +146,10 @@ hr {
     padding-bottom: 22px;
     margin-bottom: 54px;
     margin-top: 0;
-    background-color: #fbfbfb;
+    background-color: #FFFFFF;
   }
   .chat-header {
-    padding-top: 5px;
+    padding-top: 13px;
     padding-bottom: 12px;
   }
   .chat-send {
