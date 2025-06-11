@@ -133,15 +133,10 @@ hr {
     background-color: #FFFFFF;
     margin-left: 9px;
   }
-  .message .message-content {
-    padding-left: 23px;
-    padding-right: 23px;
-    padding-top: 23px;
-    margin-left: 15px;
-  }
   .chat-messages {
     padding-top: 52px;
     padding-right: 48px;
+    padding-left: 48px;
   }
   .chat-form .form-search {
     padding-bottom: 22px;
