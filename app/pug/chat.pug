@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-  .container-xxl.chat-current.row.div(class="md:radius")
+  .container-xxl.row.div(class="md:radius")
     .col-md-4.border-right 
       include components/chat-header.pug
 
@@ -78,7 +78,7 @@ block content
                 .message-time Только что
 
           // Форма отправки
-        form.chat-form.d-flex
-          input.form-search(type="text", placeholder="Напишите сообщение…")
-          button.chat-send(type="submit")
-            i.bi.bi-send
+          form.chat-form.d-flex
+            input.form-search(type="text", placeholder="Напишите сообщение…")
+            button.chat-send(type="submit")
+              i.bi.bi-send

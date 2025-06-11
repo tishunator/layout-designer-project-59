@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="overflow-hidden general-padding"> 
-    <div class="container-xxl chat-current row div md:radius">
+    <div class="container-xxl row div md:radius">
       <div class="col-md-4 border-right"> 
         <header class="header d-flex bg-primary radius-left-top w-100">
           <div class="container-fluid mL d-flex flex-nowrap justify-content-end justify-content-md-center align-items-center">
@@ -298,11 +298,11 @@
               </div>
             </div>
             <!-- Форма отправки-->
+            <form class="chat-form d-flex">
+              <input class="form-search" type="text" placeholder="Напишите сообщение…">
+              <button class="chat-send" type="submit"><i class="bi bi-send"></i></button>
+            </form>
           </div>
-          <form class="chat-form d-flex">
-            <input class="form-search" type="text" placeholder="Напишите сообщение…">
-            <button class="chat-send" type="submit"><i class="bi bi-send"></i></button>
-          </form>
         </div>
       </div>
     </div>
