@@ -140,7 +140,8 @@ hr {
     margin-left: 15px;
   }
   .chat-messages {
-    padding-top: 50px;
+    padding-top: 52px;
+    padding-right: 48px;
   }
   .chat-form .form-search {
     padding-bottom: 22px;
