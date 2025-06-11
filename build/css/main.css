@@ -29279,6 +29279,7 @@ hr {
   form.chat-form {
     background-color: #FFFFFF;
     border-top: solid 1px var(--bs-gray);
+    margin-left: 0;
   }
   .chat-messages {
     padding-top: 52px;
@@ -29291,7 +29292,7 @@ hr {
     margin-bottom: 54px;
     margin-top: 0;
     background-color: #FFFFFF;
-    padding-left: 48px;
+    padding-left: 32px;
   }
   .chat-header {
     padding-top: 0;
@@ -29299,7 +29300,7 @@ hr {
   }
   .chat-send {
     align-self: flex-start;
-    transform: translateY(50%);
+    margin-top: 15px;
     width: 42px;
     height: 42px;
     margin-right: 19px;
