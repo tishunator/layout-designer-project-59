@@ -29276,9 +29276,6 @@ hr {
 }
 
 @media (max-width: 767.98px) {
-  .message .message-content {
-    padding-right: 8px;
-  }
   form.chat-form {
     background-color: #FFFFFF;
     border-top: solid 1px var(--bs-gray);
