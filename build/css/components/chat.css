@@ -147,8 +147,8 @@ hr {
     padding-left: 48px;
   }
   .chat-header {
-    padding-top: 13px;
-    padding-bottom: 14px;
+    padding-top: 0;
+    padding-bottom: 24px;
   }
   .chat-send {
     align-self: flex-start;
