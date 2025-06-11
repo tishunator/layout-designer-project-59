@@ -29304,10 +29304,10 @@ form.chat-form {
     width: 42px;
     height: 42px;
   }
-  .header-logo-icon {
+  .chat-current .header-logo-icon {
     left: -100px;
   }
-  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  .chat-current .mL {
     margin-left: -30px;
   }
 }
