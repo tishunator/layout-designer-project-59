@@ -29276,9 +29276,12 @@ hr {
 }
 
 @media (max-width: 767.98px) {
+  .message .message-content {
+    padding-right: 8px;
+  }
   form.chat-form {
     background-color: #FFFFFF;
-    margin-left: 9px;
+    border-top: solid 1px var(--bs-gray);
   }
   .chat-messages {
     padding-top: 52px;
@@ -29286,10 +29289,12 @@ hr {
     padding-left: 48px;
   }
   .chat-form .form-search {
+    padding-top: 22px;
     padding-bottom: 22px;
     margin-bottom: 54px;
     margin-top: 0;
     background-color: #FFFFFF;
+    padding-left: 48px;
   }
   .chat-header {
     padding-top: 13px;
@@ -29301,6 +29306,7 @@ hr {
     width: 42px;
     height: 42px;
     margin-right: 19px;
+    border: none;
   }
   .chat-current .header-logo-icon {
     left: -100px;
