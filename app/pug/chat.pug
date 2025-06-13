@@ -1,14 +1,14 @@
 extends layout.pug
 
 block content
-  .container-xxl.chat-current.row.div(class="md:radius")
+  .container-xxl.chat-current.row
     .col-md-4.border-right 
       include components/chat-header.pug
 
       .tab-content
         .tab-pane.fade#current-chat(role="tabpanel")
           include components/chat.pug
-          
+
         .tab-pane.fade#contacts(role="tabpanel")
           include components/contact.pug
 
@@ -22,7 +22,7 @@ block content
 
         .chat-header
           .chat-user.d-flex.align-items-center
-            img.avatar.rounded-circle(src="images/avatar_4.jpg", alt="Аватар")
+            img.avatar.rounded-circle(src="images/avatar_4.jpg" alt="Аватар")
             .chat-user-info.ms-3
               h5.chat-user-name.mb-0 Вениамин Редакторович
               small.contact-status.chat-user-status Онлайн
@@ -31,7 +31,7 @@ block content
         .chat-messages
           // Входящее
           .message.message-in
-            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            img.shadow-sm.avatar(src="images/avatar_4.jpg" alt="Аватар")
             .message-body
               .message-content.shadow-sm
                 h5.chat-user-name Вениамин Редакторович
@@ -41,7 +41,7 @@ block content
 
           // Исходящее
           .message.message-out
-            img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            img.shadow-sm.avatar(src="images/avatar_1.jpg" alt="Аватар")
             .message-body
               .message-content.shadow-sm
                 p Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
@@ -50,7 +50,7 @@ block content
 
           // Входящее
           .message.message-in
-            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            img.shadow-sm.avatar(src="images/avatar_4.jpg" alt="Аватар")
             .message-body
               .message-content.shadow-sm
                 h5.chat-user-name Вениамин Редакторович
@@ -60,7 +60,7 @@ block content
 
           // Исходящее
           .message.message-out
-            img.shadow-sm.avatar(src="images/avatar_1.jpg", alt="Аватар")
+            img.shadow-sm.avatar(src="images/avatar_1.jpg" alt="Аватар")
             .message-body
               .message-content.shadow-sm
                 p А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
@@ -69,7 +69,7 @@ block content
 
           // Входящее
           .message.message-in
-            img.shadow-sm.avatar(src="images/avatar_4.jpg", alt="Аватар")
+            img.shadow-sm.avatar(src="images/avatar_4.jpg" alt="Аватар")
             .message-body
               .message-content.shadow-sm
                 h5.chat-user-name Вениамин Редакторович
@@ -79,6 +79,6 @@ block content
 
           // Форма отправки
           form.chat-form.d-flex
-            input.form-search(type="text", placeholder="Напишите сообщение…")
+            input.form-search(type="text" placeholder="Напишите сообщение…")
             button.chat-send(type="submit")
               i.bi.bi-send
