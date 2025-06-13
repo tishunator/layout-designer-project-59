@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:css": "stylelint '**/*.scss'",
-    "lint:html": "htmlhint '**/*.html'"
+    "lint:html": "htmlhint 'build/*.html'"
   },
   "repository": {
     "type": "git",
