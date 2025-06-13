@@ -1,18 +1,18 @@
-@import "../../node_modules/bootstrap/scss/functions";
+@import '../../node_modules/bootstrap/scss/functions';
 
 $theme-colors: (
-  "primary": #4545a5,
-  "gray": #efefef,
-  "secondary": #6c757d,
-  "success": #28a745,
-  "info": #17a2b8,
-  "warning": #ffc107,
-  "danger": #dc3545,
-  "light": #fbfbfb,
-  "dark": #343a40
+  'primary': #4545a5,
+  'gray': #efefef,
+  'secondary': #6c757d,
+  'success': #28a745,
+  'info': #17a2b8,
+  'warning': #ffc107,
+  'danger': #dc3545,
+  'light': #fbfbfb,
+  'dark': #343a40
 );
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/maps"; // <== обязательно!
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/maps'; // <== обязательно!
 
 // 2. Переопределяем переменные
 $grid-breakpoints: map-merge(
@@ -30,7 +30,7 @@ $container-max-widths: map-merge(
 );
 
 // 3. Подключаем Bootstrap целиком (он увидит переопределения выше)
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // 4. Подключаем твои файлы
 @import 'var';
@@ -46,16 +46,17 @@ $container-max-widths: map-merge(
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url('../fonts/Roboto-Regular.ttf');
 }
+
 @font-face {
   font-weight: 700;
   font-family: Roboto;
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url('../fonts/Roboto-Bold.ttf');
 }
+
 @font-face {
   font-weight: 300;
   font-family: Roboto;
-  src: url("../fonts/Roboto-Light.ttf");
+  src: url('../fonts/Roboto-Light.ttf');
 }
-

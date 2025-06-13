@@ -4,6 +4,8 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("../var");
+@import url("../var");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -28893,11 +28895,11 @@ textarea.form-control-lg {
   }
 }
 body {
-  font-family: "Roboto", sans-serif;
+  height: 100vh;
   font-weight: 400;
   font-size: 14px;
+  font-family: Roboto, sans-serif;
   background-color: var(--bs-gray);
-  height: 100vh;
 }
 
 .row {
@@ -28913,7 +28915,7 @@ body {
   background-color: white;
 }
 
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   .general-padding {
     padding: 0;
   }
@@ -28929,14 +28931,14 @@ body {
 
 .header .nav-link {
   padding: 0;
-  background-color: transparent;
   text-decoration: none;
+  background-color: transparent;
   border: none;
 }
 .header .nav-link:hover, .header .nav-link:focus, .header .nav-link:active, .header .nav-link.active {
   color: var(--bs-light);
-  background-color: transparent;
   text-decoration: none;
+  background-color: transparent;
   border: none;
   outline: none;
   box-shadow: none;
@@ -28947,8 +28949,10 @@ body {
 }
 
 .header-logo-icon {
-  height: 25px;
   width: 40px;
+  height: 25px;
+  position: relative;
+  left: -22px;
 }
 
 .header {
@@ -28958,11 +28962,6 @@ body {
 
 .nav-link svg {
   margin-right: 8px;
-}
-
-.header-logo-icon {
-  position: relative;
-  left: -22px;
 }
 
 .border-right {
@@ -28977,7 +28976,7 @@ body {
   padding-left: 8px;
 }
 
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   .header-logo-icon {
     left: -155px;
   }
@@ -28988,47 +28987,46 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
+    width: 100%;
   }
 }
 .contacts {
-  height: 100vh;
-  overflow-y: auto;
   box-sizing: border-box;
+  height: 100vh;
   padding-bottom: 100px;
+  overflow-y: auto;
 }
 .contacts {
+  overflow: hidden auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 .contacts::-webkit-scrollbar {
   display: none;
 }
 
 h2, .h2 {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-weight: 700;
 }
 
 .form-search {
-  border: none;
-  border-bottom: solid 1px var(--bs-gray);
-  padding: 24px;
-  padding-bottom: 25px;
   width: 100%;
   margin-top: 22px;
+  padding: 24px;
+  padding-bottom: 25px;
   font-size: 16px;
+  border: none;
+  border-bottom: solid 1px var(--bs-gray);
 }
 
 .avatar {
   width: 50px;
   height: 50px;
-  margin-left: 15px;
   margin-top: 15px;
+  margin-left: 15px;
 }
 
 .chat .avatar {
@@ -29036,7 +29034,7 @@ h2, .h2 {
 }
 
 .chat-info {
-  padding-top: 46px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  padding-top: 46px; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .contact {
@@ -29046,17 +29044,19 @@ h2, .h2 {
 }
 
 a.contact {
-  text-decoration: none;
   color: #212529;
+  text-decoration: none;
 }
 
 .contact:hover {
-  background-color: var(--bs-primary);
   color: var(--bs-light);
+  background-color: var(--bs-primary);
 }
 
 .contact-status {
   color: var(-bs--secondary);
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .contact-status:hover {
@@ -29064,8 +29064,8 @@ a.contact {
 }
 
 h6, .h6 {
-  padding-top: 12px;
   margin: 0;
+  padding-top: 12px;
 }
 
 .mB-34 {
@@ -29073,18 +29073,13 @@ h6, .h6 {
 }
 
 .text {
-  padding-left: 24px;
   padding-top: 24px;
+  padding-left: 24px;
 }
 
 h5, .h5 {
-  font-size: 16px;
   font-weight: 700;
-}
-
-.contact-status {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
 }
 
 .chat {
@@ -29094,13 +29089,13 @@ h5, .h5 {
 }
 
 a.chat {
-  text-decoration: none;
   color: #212529;
+  text-decoration: none;
 }
 
 .chat:hover {
-  background-color: var(--bs-primary);
   color: var(--bs-light);
+  background-color: var(--bs-primary);
 }
 
 .chat-lastMessage {
@@ -29116,8 +29111,8 @@ a.chat {
 }
 
 .chat-info {
-  padding-left: 24px;
   padding-top: 36px;
+  padding-left: 24px;
 }
 
 .last-message {
@@ -29125,7 +29120,7 @@ a.chat {
 }
 
 .mBneg-18 {
-  margin-bottom: -33px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  margin-bottom: -33px; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .pR-40 {
@@ -29142,8 +29137,8 @@ a.chat {
 }
 
 .list-group-item {
-  padding-top: 85px;
   margin-left: 12px;
+  padding-top: 85px;
 }
 
 #current-chat.chat-dialog {
@@ -29156,30 +29151,30 @@ a.chat {
 .chat-header {
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 10;
   padding-top: 12px;
+  background-color: white;
   border-bottom: solid 1px var(--bs-gray);
 }
 
 .chat-messages {
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding-top: 65px;
   padding-right: 42px;
   padding-left: 34px;
+  overflow-y: auto;
 }
 
 .chat-send {
+  align-self: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background-color: var(--bs-primary);
   color: white;
-  font-size: 20.6px; /* размер иконки */
-  align-self: center;
+  font-size: 20.6px;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
 }
 
 .chat-user {
@@ -29192,22 +29187,26 @@ a.chat {
 }
 
 .chat-user-info {
-  padding-left: 2px;
   padding-top: 4px;
+  padding-left: 2px;
 }
 
 .chat-form {
   position: sticky;
   bottom: 0;
-  padding-bottom: 18px;
   margin-left: -15px;
+  padding-bottom: 18px;
 }
 
 .chat-form .form-search {
   padding: 32px 24px;
-  border-bottom: none;
-  border-top: solid 1px var(--bs-gray);
   padding-bottom: 62px;
+  border-top: solid 1px var(--bs-gray);
+  border-bottom: none;
+}
+
+h5, .h5 {
+  white-space: nowrap;
 }
 
 .message {
@@ -29215,72 +29214,68 @@ a.chat {
   align-items: flex-start;
 }
 .message .avatar {
-  border-radius: 50%;
-  object-fit: cover;
   align-self: flex-end;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .message .message-body {
   display: flex;
   flex-direction: column;
-  max-width: 563px;
   min-width: 237px;
+  max-width: 563px;
 }
 .message .message-content {
   padding: 1.5rem;
-  border-radius: 1rem;
-  word-wrap: break-word;
   text-align: left;
+  word-wrap: break-word;
+  border-radius: 1rem;
 }
 .message .message-content h5, .message .message-content .h5 {
   color: var(--bs-dark);
 }
 .message .message-time {
-  font-size: 0.875rem;
-  color: rgba(108, 117, 125, 0.6);
   margin-top: -12px;
+  color: rgba(108, 117, 125, 0.6);
+  font-size: 0.875rem;
 }
 
 .message-in {
-  align-self: flex-start;
   flex-direction: row;
   gap: 15px;
+  align-self: flex-start;
 }
 .message-in .message-content {
-  background-color: var(--bs-light);
   color: var(--bs-secondary);
-}
-
-h5, .h5 {
-  white-space: nowrap;
+  background-color: var(--bs-light);
 }
 
 .message-out {
+  gap: 15px;
   align-self: flex-end;
   justify-content: flex-end;
-  gap: 15px;
 }
 .message-out .message-content {
-  background-color: var(--bs-primary);
   color: var(--bs-light);
+  background-color: var(--bs-primary);
 }
 .message-out .message-time {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .chat-dialog p {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 hr {
   margin-top: 8px !important;
 }
 
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   form.chat-form {
-    background-color: #FFFFFF;
-    padding-bottom: 22px;
-    border-top: solid 1px var(--bs-gray);
     margin-left: 0;
+    padding-bottom: 22px;
+    background-color: #fff;
+    border-top: solid 1px var(--bs-gray);
   }
   .chat-messages {
     padding-top: 52px;
@@ -29288,12 +29283,12 @@ hr {
     padding-left: 48px;
   }
   .chat-form .form-search {
+    margin-top: 0;
+    margin-bottom: 54px;
     padding-top: 22px;
     padding-bottom: 22px;
-    margin-bottom: 54px;
-    margin-top: 0;
-    background-color: #FFFFFF;
     padding-left: 32px;
+    background-color: #fff;
   }
   .chat-header {
     padding-top: 0;
@@ -29301,9 +29296,9 @@ hr {
   }
   .chat-send {
     align-self: flex-start;
-    margin-top: 15px;
     width: 42px;
     height: 42px;
+    margin-top: 15px;
     margin-right: 19px;
     border: none;
   }

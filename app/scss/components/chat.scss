@@ -4,183 +4,182 @@
   height: 100vh; // или 100% если обёртка ограничена по высоте
   font-size: 16px;
 }
+
 .chat-header {
   position: sticky;
   top: 0;
-  background-color: white; // или твой фон
   z-index: 10;
   padding-top: 12px;
+  background-color: white; // или твой фон
   border-bottom: solid 1px var(--bs-gray);
 }
 
 .chat-messages {
-  
-  overflow-y: auto;
-  
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding-top: 65px;
-
-    padding-right: 42px;
-    padding-left: 34px;
+  padding-right: 42px;
+  padding-left: 34px;
+  overflow-y: auto;
 }
-.chat-send {
 
+.chat-send {
+  align-self: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background-color: var(--bs-primary);
   color: white;
-  font-size: 20.6px; /* размер иконки */
-  align-self: center;
+  font-size: 20.6px;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+}
 
-}
 .chat-user {
-  gap:9px;
+  gap: 9px;
 }
-.chat-user .avatar{
+
+.chat-user .avatar {
   position: relative;
-    top: -6px;
+  top: -6px;
 }
+
 .chat-user-info {
+  padding-top: 4px;
   padding-left: 2px;
-    padding-top: 4px;
 }
-.chat-form{
+
+.chat-form {
   position: sticky;
   bottom: 0;
-  padding-bottom: 18px;
   margin-left: -15px;
-
+  padding-bottom: 18px;
 }
-.chat-form .form-search{
+
+.chat-form .form-search {
   padding: 32px 24px;
-  border-bottom: none;
-  border-top: solid 1px var(--bs-gray);
   padding-bottom: 62px;
+  border-top: solid 1px var(--bs-gray);
+  border-bottom: none;
+}
+
+h5 {
+  white-space: nowrap;
 }
 
 // Общие стили для сообщения
 .message {
   display: flex;
   align-items: flex-start;
- 
 
   .avatar {
-
-    border-radius: 50%;
-    object-fit: cover;
     align-self: flex-end;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .message-body {
     display: flex;
     flex-direction: column;
-    max-width: 563px;
     min-width: 237px;
+    max-width: 563px;
   }
 
- .message-content {
+  .message-content {
     padding: 1.5rem;
-    border-radius: 1rem;
-    word-wrap: break-word;
     text-align: left;
- h5{
-  color: var(--bs-dark);
- }
+    word-wrap: break-word;
+    border-radius: 1rem;
+
+    h5 {
+      color: var(--bs-dark);
+    }
   }
 
   .message-time {
-    font-size: 0.875rem;
-    color: #6C757D99;
     margin-top: -12px;
-  
+    color: #6c757d99;
+    font-size: 0.875rem;
   }
-
 }
 
 // Сообщение собеседника (слева)
 .message-in {
-  align-self: flex-start;
   flex-direction: row;
   gap: 15px;
+  align-self: flex-start;
 
   .message-content {
-    background-color: var(--bs-light);
     color: var(--bs-secondary);
+    background-color: var(--bs-light);
   }
 }
-h5 {
-  white-space: nowrap;
-}
+
 // Сообщение пользователя (справа)
 .message-out {
+  gap: 15px;
   align-self: flex-end;
   justify-content: flex-end;
-  gap: 15px;
 
   .message-content {
-    background-color: var(--bs-primary);
     color: var(--bs-light);
+    background-color: var(--bs-primary);
   }
-  .message-time  {
 
-    color: #FFFFFF99;
+  .message-time {
+    color: #fff9;
   }
 }
-.chat-dialog p{
-  margin-bottom: 0px !important;
+
+.chat-dialog p {
+  margin-bottom: 0 !important;
 }
 
-hr{
+hr {
   margin-top: 8px !important;
 }
 
-
-@media (max-width: 767.98px) {
- 
-  form.chat-form{
-    background-color: #FFFFFF;;
-    padding-bottom: 22px;
-    border-top: solid 1px var(--bs-gray);
+@media (width <=767.98px) {
+  form.chat-form {
     margin-left: 0;
-    
+    padding-bottom: 22px;
+    background-color: #fff;
+    border-top: solid 1px var(--bs-gray);
   }
 
-.chat-messages {
-  padding-top: 52px;
-  padding-right: 48px;
-  padding-left: 48px;
-}
+  .chat-messages {
+    padding-top: 52px;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 
-.chat-form .form-search{
-  padding-top: 22px;
-padding-bottom:22px;
-margin-bottom: 54px;
-  margin-top: 0;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-.chat-header{
- padding-top: 0;
-  padding-bottom: 24px;
-}
-.chat-send {
-  
-  align-self: flex-start;
-  margin-top: 15px;
-  width: 42px;
-  height: 42px;
-  margin-right: 19px;
-  border: none;
- 
+  .chat-form .form-search {
+    margin-top: 0;
+    margin-bottom: 54px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 32px;
+    background-color: #fff;
+  }
 
-}
-.chat-current .header-logo-icon {
-  left: -100px;
-}
-.chat-current .mL{
-  margin-left:-30px
-}
+  .chat-header {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .chat-send {
+    align-self: flex-start;
+    width: 42px;
+    height: 42px;
+    margin-top: 15px;
+    margin-right: 19px;
+    border: none;
+  }
+
+  .chat-current .header-logo-icon {
+    left: -100px;
+  }
+
+  .chat-current .mL {
+    margin-left: -30px;
+  }
 }

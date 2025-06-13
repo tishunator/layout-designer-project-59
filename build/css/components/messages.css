@@ -5,13 +5,13 @@
 }
 
 a.chat {
-  text-decoration: none;
   color: #212529;
+  text-decoration: none;
 }
 
 .chat:hover {
-  background-color: var(--bs-primary);
   color: var(--bs-light);
+  background-color: var(--bs-primary);
 }
 
 .chat-lastMessage {
@@ -27,8 +27,8 @@ a.chat {
 }
 
 .chat-info {
-  padding-left: 24px;
   padding-top: 36px;
+  padding-left: 24px;
 }
 
 .last-message {
@@ -36,7 +36,7 @@ a.chat {
 }
 
 .mBneg-18 {
-  margin-bottom: -33px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  margin-bottom: -33px; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .pR-40 {

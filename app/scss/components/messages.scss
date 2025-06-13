@@ -1,39 +1,44 @@
-.chat{
+.chat {
   margin-top: 24px;
   padding-bottom: 24px;
   border: none;
-
 }
+
 a.chat {
-  text-decoration: none;
   color: #212529;
+  text-decoration: none;
 }
 
-.chat:hover{
-  background-color:var(--bs-primary);
+.chat:hover {
+  color: var(--bs-light);
+  background-color: var(--bs-primary);
+}
+
+.chat-lastMessage {
+  color: var(-bs--secondary);
+}
+
+.chat-lastMessage:hover {
   color: var(--bs-light);
 }
 
-.chat-lastMessage{
-  color:var(-bs--secondary);
-}
-.chat-lastMessage:hover{
-  color: var(--bs-light);
-}
-.messages{
+.messages {
   height: 100vh;
 }
-.chat-info{
-  padding-left: 24px;
+
+.chat-info {
   padding-top: 36px;
+  padding-left: 24px;
 }
 
 .last-message {
   font-size: 80%;
 }
-.mBneg-18{
-  margin-bottom: -33px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.mBneg-18 {
+  margin-bottom: -33px; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
-.pR-40{
+
+.pR-40 {
   padding-right: 40px;
 }

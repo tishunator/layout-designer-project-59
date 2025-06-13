@@ -1,3 +1,4 @@
+@import url("../var");
 .header a {
   color: var(--bs-light);
   text-decoration: none;
@@ -9,14 +10,14 @@
 
 .header .nav-link {
   padding: 0;
-  background-color: transparent;
   text-decoration: none;
+  background-color: transparent;
   border: none;
 }
 .header .nav-link:hover, .header .nav-link:focus, .header .nav-link:active, .header .nav-link.active {
   color: var(--bs-light);
-  background-color: transparent;
   text-decoration: none;
+  background-color: transparent;
   border: none;
   outline: none;
   box-shadow: none;
@@ -27,8 +28,10 @@
 }
 
 .header-logo-icon {
-  height: 25px;
   width: 40px;
+  height: 25px;
+  position: relative;
+  left: -22px;
 }
 
 .header {
@@ -38,11 +41,6 @@
 
 .nav-link svg {
   margin-right: 8px;
-}
-
-.header-logo-icon {
-  position: relative;
-  left: -22px;
 }
 
 .border-right {
@@ -57,7 +55,7 @@
   padding-left: 8px;
 }
 
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   .header-logo-icon {
     left: -155px;
   }
@@ -68,7 +66,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
+    width: 100%;
   }
 }

@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
+  height: 100vh;
   font-weight: 400;
   font-size: 14px;
+  font-family: Roboto, sans-serif;
   background-color: var(--bs-gray);
-  height: 100vh;
 }
 
 .row {
@@ -20,7 +20,7 @@ body {
   background-color: white;
 }
 
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   .general-padding {
     padding: 0;
   }

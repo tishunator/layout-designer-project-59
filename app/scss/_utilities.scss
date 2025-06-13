@@ -2,23 +2,21 @@ $custom-border-color: #efefef;
 $custom-radius: 1rem;
 
 // === Border Utilities ===
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 $utilities: map-merge(
   $utilities,
   (
-
     // Границы
-    "border": map-merge(
-      map-get($utilities, "border"),
-      (
-        responsive: true,
-        values: (
-          null: 1px solid $custom-border-color
+    'border': map-merge(
+        map-get($utilities, 'border'),
+        (
+          responsive: true,
+          values: (
+            null: 1px solid $custom-border-color
+          )
         )
-      )
-    ),
-
-    "border-top": (
+      ),
+    'border-top': (
       property: border-top,
       class: border-top,
       values: (
@@ -27,7 +25,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "border-bottom": (
+    'border-bottom': (
       property: border-bottom,
       class: border-bottom,
       values: (
@@ -36,7 +34,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "border-left": (
+    'border-left': (
       property: border-left,
       class: border-left,
       values: (
@@ -45,7 +43,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "border-right": (
+    'border-right': (
       property: border-right,
       class: border-right,
       values: (
@@ -55,16 +53,16 @@ $utilities: map-merge(
     ),
 
     // Радиусы
-    "radius": (
-      property: border-radius,
-      class: radius,
-      values: (
-        null: $custom-radius
+    'radius': (
+        property: border-radius,
+        class: radius,
+        values: (
+          null: $custom-radius
+        ),
+        responsive: true
       ),
-      responsive: true
-    ),
 
-    "radius-left-top": (
+    'radius-left-top': (
       property: border-top-left-radius,
       class: radius-left-top,
       values: (
@@ -73,7 +71,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "radius-left-bottom": (
+    'radius-left-bottom': (
       property: border-bottom-left-radius,
       class: radius-left-bottom,
       values: (
@@ -82,7 +80,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "radius-right-top": (
+    'radius-right-top': (
       property: border-top-right-radius,
       class: radius-right-top,
       values: (
@@ -91,7 +89,7 @@ $utilities: map-merge(
       responsive: true
     ),
 
-    "radius-right-bottom": (
+    'radius-right-bottom': (
       property: border-bottom-right-radius,
       class: radius-right-bottom,
       values: (
@@ -103,4 +101,4 @@ $utilities: map-merge(
 );
 
 // === Подключаем API Bootstrap Utilities ===
-@import "../../node_modules/bootstrap/scss/utilities/api";
+@import '../../node_modules/bootstrap/scss/utilities/api';
