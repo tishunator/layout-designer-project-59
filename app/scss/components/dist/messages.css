@@ -14,14 +14,6 @@ a.chat {
   background-color: var(--bs-primary);
 }
 
-.chat-last-Message {
-  color: var(-bs--secondary);
-}
-
-.chat-last-Message:hover {
-  color: var(--bs-light);
-}
-
 .messages {
   height: 100vh;
 }
