@@ -29068,10 +29068,9 @@ h6, .h6 {
   padding-top: 12px;
 }
 
-.mB-34 {
+/* .mB-34 {
   margin-bottom: 34px;
-}
-
+} */
 .text {
   padding-top: 24px;
   padding-left: 24px;
@@ -29098,11 +29097,11 @@ a.chat {
   background-color: var(--bs-primary);
 }
 
-.chat-lastMessage {
+.chat-last-Message {
   color: var(-bs--secondary);
 }
 
-.chat-lastMessage:hover {
+.chat-last-Message:hover {
   color: var(--bs-light);
 }
 
@@ -29309,7 +29308,6 @@ hr {
     margin-left: -30px;
   }
 }
-/*коммент*/
 @font-face {
   font-weight: 400;
   font-family: Roboto;

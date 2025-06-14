@@ -1,4 +1,4 @@
-@import url('../var');
+@import url("../var");
 
 @mixin hide-scrollbar() {
   & {
@@ -83,9 +83,9 @@ h6 {
   padding-top: 12px;
 }
 
-.mB-34 {
+/* .mB-34 {
   margin-bottom: 34px;
-}
+} */
 
 .text {
   padding-top: 24px;
