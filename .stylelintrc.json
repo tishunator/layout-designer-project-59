@@ -8,7 +8,6 @@
     "stylelint-scss"
   ],
   "rules": {
-    "order/properties-order": [],
     "scss/dollar-variable-pattern": "^[_]?[a-z]+([a-z0-9-]+)*$"
   },
   "overrides": [
